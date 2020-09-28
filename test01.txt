@@ -1,0 +1,21 @@
+get1
+get2
+set2sec 1234
+get2sec
+get2min
+plus1 23 59 59
+minus2 23 59 59
+get1
+get2
+plus2to1
+get1
+get2
+plus1to2
+get1
+get2
+compare
+help
+plus1sec 87643
+get1
+minus2sec 3458
+get2

@@ -11,6 +11,7 @@ Github: https://github.com/MarkRevantov/oop_exercise_01
 #include <string>
 //template <typename T>
 
+// Временные точки. hh:mm:ss.
 class TimePoint {
     protected:
     int32_t seconds;
@@ -120,9 +121,8 @@ int main() {
     TimePoint time1(0,0,0);
     TimePoint time2(0,0,0);
     int32_t seconds, minutes, hours;
-    while (true) {
-        std::cout << ">>> ";
-        std::cin >> cmd;
+    std::cout << ">>> ";
+    while (std::cin >> cmd) {
         if(cmd == "quit" || cmd == "exit") {
             break;
         }
@@ -134,8 +134,7 @@ int main() {
                 cmd != "plus1to2" && cmd != "plus2to1" && cmd != "get1" && cmd != "get2" &&
                 cmd != "get1sec" && cmd != "get2sec" && cmd != "get1min" && cmd != "get2min" &&
                 cmd != "compare" || cmd == "help") {
-            std::cout << "\n--------" << cmd << "------\n";
-            //help();
+            help();
             continue;
         }
         else if (cmd == "set1" || cmd == "plus1" || cmd == "minus1" || cmd == "set2" || cmd == "plus2" || cmd == "minus2") {
@@ -171,6 +170,7 @@ int main() {
         else if (cmd == "compare" && time1.compare(time2) == true) std::cout << " true\n";
         else if (cmd == "compare" && time1.compare(time2) == false) std::cout << " false\n";
 
+        std::cout << ">>> ";
     }
     return 0;
 }
