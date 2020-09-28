@@ -1,0 +1,18 @@
+get1
+get2
+set1 12 12 12
+get1sec
+get1min
+plus1 7 25 52
+minus2 4 45 5
+get1
+get2
+plus2to1
+get1
+get2
+plus1to2
+get1
+get2
+compare
+help
+exit
